@@ -71,9 +71,6 @@ button {
     text-transform: uppercase;
 }
 
-.hide{
-    display: none;
-}
 
 .thank{
     display: flex;
@@ -100,6 +97,10 @@ h4{
     padding: 7px 15px;
     border-radius: 25px;
     color: hsl(25, 97%, 53%);
+}
+
+.hide{
+    display: none;
 }
 
 .attribution {
