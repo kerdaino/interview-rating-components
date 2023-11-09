@@ -1,43 +1,53 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Define the document type as HTML -->
+<html lang="en"> <!-- Start of the HTML document with English as the language -->
 
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"> <!-- Set the character encoding to UTF-8 for proper text display -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <!-- Configure the viewport for responsive design -->
 
+  <!-- Link to the website icon for different devices -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
+  <!-- Link to the main CSS file for styling -->
   <link rel="stylesheet" href="css/main.css">
 
-  <!-- google fonts -->
+  <!-- Link to Google Fonts for custom fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Set the title of the webpage -->
   <title>Frontend Mentor | Interactive rating component</title>
 
 </head>
 
 <body>
-  <main>
+  <main> <!-- Start of the main content -->
+
     <!-- Rating state start -->
-    <section class="rating">
+    <section class="rating"> <!-- Create a section for the rating component -->
       <header>
-        <img src="images/icon-star.svg" alt="a star">
+        <img src="images/icon-star.svg" alt="a star"> <!-- Display a star icon -->
       </header>
 
-      <div class="text">
-        <h1>How did we do?</h1>
+      <div class="text"> <!-- Create a container for text content -->
+        <h1>How did we do?</h1> <!-- Heading for the rating section -->
 
+        <!-- Feedback message -->
         <p>Please let us know how we did with your support request. All feedback is appreciated
           to help us improve our offering!</p>
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
+
+        <div class="buttonlist"> <!-- Container for rating buttons -->
+          <button>1</button> <!-- Rating button for 1 -->
+          <button>2</button> <!-- Rating button for 2 -->
+          <button>3</button> <!-- Rating button for 3 -->
+          <button>4</button> <!-- Rating button for 4 -->
+          <button>5</button> <!-- Rating button for 5 -->
+        </div>
       </div>
-      <button type="submit">
+
+      <button type="submit"> <!-- Submit button for submitting the rating -->
         Submit
       </button>
 
@@ -45,22 +55,28 @@
     <!-- Rating state end -->
 
     <!-- Thank you state start -->
-    <section class="thank hide">
-      <img src="images/illustration-thank-you.svg" alt="">
-      <h4>You selected  <span>0</span> of 5</h4>
-      <h2>Thank you!</h2>
+    <section class="thank hide"> <!-- Create a section for the thank you message, initially hidden -->
+      <img src="images/illustration-thank-you.svg" alt=""> <!-- Thank you illustration -->
+      <h4>You selected <span>0</span> of 5</h4> <!-- Display the selected rating out of 5 -->
+      <h2>Thank you!</h2> <!-- Thank you message heading -->
       <p>We appreciate you taking the time to give a rating. If you ever need more support,
         don’t hesitate to get in touch!
-      </p>
+      </p> <!-- Thank you message content -->
     </section>
     <!-- Thank you state end -->
 
-  </main>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-  <script src="js/main.js"></script>
-</body>
+  </main> <!-- End of the main content -->
 
-</html>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://kerdaino.github.io/portfolio/" target="_blank">Tobi Adekunle (kerdaino dev)</a>.
+    </div> <!-- Attribution and credit information -->
+  </footer> <!-- End of the footer section -->
+
+  <!-- Link to the main JavaScript file for functionality -->
+  <script src="js/main.js"></script>
+
+</body> <!-- End of the HTML document body -->
+
+</html> <!-- End of the HTML document -->

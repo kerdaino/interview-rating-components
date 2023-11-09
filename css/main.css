@@ -1,5 +1,6 @@
-/* global styles */
+/* Global styles */
 
+/* Set font size, background color, and font color for the entire page */
 body {
     font-size: 15px;
     background: hsl(216, 12%, 8%);
@@ -11,12 +12,14 @@ body {
     font-family: 'Overpass', sans-serif;
 }
 
+/* Style for sections containing content */
 section {
     background: hsl(213, 19%, 18%);
     padding: 30px 20px;
     border-radius: 20px;
 }
 
+/* Style for header element within sections */
 header {
     padding: 10px;
     width: 20px;
@@ -28,22 +31,29 @@ header {
     background: hsl(210, 16%, 22%);
 }
 
+/* Style for star icon within header */
 header img {
     width: 15px;
     height: 15px;
 }
 
+/* Style for text content within sections */
 .text {
     margin-bottom: 20px;
     padding: 10px 0;
-    display: flex;
-    flex-wrap: wrap;
 }
 
+/* Style for button list container */
+.buttonlist {
+    display: flex;
+}
+
+/* Style for paragraphs */
 p {
     color: hsl(216, 12%, 54%);
 }
 
+/* Style for buttons within text */
 .text button {
     background: hsl(210, 16%, 22%);
     color: hsl(217, 12%, 63%);
@@ -58,6 +68,7 @@ p {
     align-items: center;
 }
 
+/* Style for generic buttons */
 button {
     width: 95%;
     padding: 15px 10px;
@@ -71,65 +82,122 @@ button {
     text-transform: uppercase;
 }
 
-
-.thank{
+/* Style for thank you section */
+.thank {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
     text-align: center;
 }
 
-.thank img{
+/* Style for thank you image */
+.thank img {
     margin-bottom: 15px;
     width: 100px;
 }
 
-.thank h4,.thank h2{
+/* Style for thank you headers and paragraphs */
+.thank h4,
+.thank h2 {
     margin-bottom: 10px;
 }
 
-.thank p{
+.thank p {
     margin: 10px 0;
 }
 
-h4{
+/* Style for the rating message header */
+h4 {
     background: hsl(210, 16%, 22%);
     padding: 7px 15px;
     border-radius: 25px;
     color: hsl(25, 97%, 53%);
 }
 
-.hide{
+/* Hide the thank you section by default */
+.hide {
     display: none;
 }
 
+/* Attribution style in the footer */
 .attribution {
-    font-size: 11px;
+    font-size: 16px;
     text-align: center;
 }
 
+/* Style for links in the attribution */
 .attribution a {
     color: hsl(228, 45%, 44%);
 }
 
-/* mobile styles */
+/* Mobile styles */
 
+/* Adjust section width and margin for mobile devices */
 section {
     width: fit-content;
     margin: 100px 20px;
 }
 
+/* Style for paragraphs on mobile devices */
 p {
     font-size: 16px;
+    width: 90%;
 }
 
+/* Hover effect for rating buttons on mobile */
 .text button:hover {
     background: hsl(25, 97%, 53%);
     color: hsl(0, 0%, 100%);
     transition: 0.2s;
 }
 
+/* Active state for buttons on mobile */
 button:active {
     background: hsl(0, 0%, 100%);
     color: hsl(25, 97%, 53%);
+}
+
+/* Desktop styles */
+
+/* Media query for screens wider than 1000px */
+@media screen and (min-width: 1000px) {
+
+    /* Adjust body styles for larger screens */
+    body {
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    /* Adjust section width for larger screens */
+    section {
+        width: 350px;
+    }
+
+    /* Adjust padding for rating section on larger screens */
+    .rating {
+        padding-left: 35px;
+    }
+
+    /* Add pointer cursor for rating buttons on larger screens */
+    .text button:hover {
+        cursor: pointer;
+    }
+
+    /* Apply focus styles for rating buttons on larger screens */
+    .text button:focus {
+        background: hsl(25, 97%, 53%);
+        color: hsl(0, 0%, 100%);
+    }
+
+    /* Adjust margin for rating buttons on larger screens */
+    .text button {
+        margin-right: 25px;
+    }
+
+    /* Add pointer cursor for generic buttons on larger screens */
+    button:hover {
+        cursor: pointer;
+        background: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+    }
 }
